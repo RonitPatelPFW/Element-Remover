@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Element Remover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 190px;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+        .radio-group label {
+            display: inline-block;
+            margin-left: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Element Remover</h1>
+    <form id="elementForm">
+        <div class="radio-group">
+            <input type="radio" id="classToRemove">
+            <label for="classToRemove">Class</label>
+            <input type="text" id="classSelector" placeholder="e.g., .class">
+        </div>
+        ID, TAG removal Does nothing for now
+        <div class="radio-group">
+            <input type="radio" id="idToRemove">
+            <label for="idToRemove">ID</label>
+            <input type="text" id="idSelector" placeholder="e.g., #id">
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="tagToRemove">
+            <label for="tagToRemove">Tag</label>
+            <input type="text" id="tagSelector" placeholder="e.g., input, div">
+        </div>
+        <button type="submit">Remove Elements</button>
+    </form>
+    <script src="popup.js"></script>
+</body>
+</html>
